@@ -4,14 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wheel of Fortune</title>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/wheel.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
-    <h1>돌림판</h1>
-    <div id="wheel-container">
-      <canvas id="wheelcanvas" width="500" height="500"></canvas>
-    </div>
-    <button onclick="spinWheel()">Spin</button>
+    <header>
+      <h1>돌림판</h1>
+      <button class="home-button" onclick="location.href='../index.html'">
+        홈으로
+      </button>
+    </header>
+    <main>
+      <div class="wheel-page-container">
+        <div id="wheel-container">
+          <canvas id="wheelcanvas" width="500" height="500"></canvas>
+        </div>
+        <div class="name-list-container">
+          <ul id="name-list">
+            <!-- 이름 리스트 항목 -->
+          </ul>
+          <div class="input-container">
+            <input
+              type="text"
+              id="name-input"
+              placeholder="이름 입력"
+              onkeypress="handleKeyPress(event)"
+            />
+            <button onclick="addName()">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="action-button" onclick="resetWheel()">초기화</button>
+        <button class="action-button" onclick="spinWheel()">시작!</button>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Lucky Draw Hub. All Rights Reserved.</p>
+    </footer>
     <script src="../js/wheel.js"></script>
   </body>
 </html>

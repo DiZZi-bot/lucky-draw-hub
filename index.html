@@ -4,35 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucky Draw Hub</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <h1>Lucky Draw Hub</h1>
-    <div class="grid-container">
-      <div class="grid-item" onclick="location.href='pages/wheel.html'">
-        <img src="images/wheel.png" alt="Wheel of Fortune" />
-        <p>돌림판</p>
+    <header>
+      <h1>Lucky Draw Hub</h1>
+    </header>
+    <main>
+      <div class="grid-container">
+        <div class="grid-item" onclick="location.href='pages/wheel.html'">
+          <img src="images/wheel.png" alt="Wheel of Fortune" />
+          <p>돌림판</p>
+        </div>
+        <div class="grid-item" onclick="location.href='pages/ladder.html'">
+          <img src="images/ladder.png" alt="Ladder Game" />
+          <p>사다리타기</p>
+        </div>
+        <div class="grid-item" onclick="location.href='pages/pinball.html'">
+          <img src="images/pinball.png" alt="Pinball" />
+          <p>핀볼</p>
+        </div>
+        <div class="grid-item" onclick="location.href='pages/draw-board.html'">
+          <img src="images/draw-board.png" alt="Draw Board" />
+          <p>뽑기판</p>
+        </div>
+        <div
+          class="grid-item"
+          onclick="location.href='pages/random-number.html'"
+        >
+          <img src="images/random-number.png" alt="Random Number Generator" />
+          <p>랜덤 번호 생성기</p>
+        </div>
+        <div class="grid-item" onclick="location.href='pages/dice.html'">
+          <img src="images/dice.png" alt="Dice Roll" />
+          <p>주사위 굴리기</p>
+        </div>
       </div>
-      <div class="grid-item" onclick="location.href='pages/ladder.html'">
-        <img src="images/ladder.png" alt="Ladder Game" />
-        <p>사다리타기</p>
-      </div>
-      <div class="grid-item" onclick="location.href='pages/pinball.html'">
-        <img src="images/pinball.png" alt="Pinball" />
-        <p>핀볼</p>
-      </div>
-      <div class="grid-item" onclick="location.href='pages/draw-board.html'">
-        <img src="images/draw-board.png" alt="Draw Board" />
-        <p>뽑기판</p>
-      </div>
-      <div class="grid-item" onclick="location.href='pages/random-number.html'">
-        <img src="images/random-number.png" alt="Random Number Generator" />
-        <p>랜덤 번호 생성기</p>
-      </div>
-      <div class="grid-item" onclick="location.href='pages/dice.html'">
-        <img src="images/dice.png" alt="Dice Roll" />
-        <p>주사위 굴리기</p>
-      </div>
-    </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Lucky Draw Hub. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
