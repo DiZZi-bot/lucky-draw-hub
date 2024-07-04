@@ -4,3 +4,13 @@ body {
   margin: 0;
   padding: 0;
 }
+
+#wheel-container {
+  margin: 20px auto;
+  position: relative;
+}
+
+canvas {
+  border: 2px solid #000;
+  border-radius: 50%;
+}
