@@ -7,52 +7,32 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1>Welcome to Lucky Draw Hub</h1>
-
-    <section id="wheel">
-      <h2>돌림판</h2>
-      <div id="wheel-container">
-        <canvas id="wheelcanvas" width="500" height="500"></canvas>
+    <h1>Lucky Draw Hub</h1>
+    <div class="grid-container">
+      <div class="grid-item" onclick="location.href='pages/wheel.html'">
+        <img src="images/wheel.png" alt="Wheel of Fortune" />
+        <p>돌림판</p>
       </div>
-      <button onclick="spinWheel()">Spin</button>
-    </section>
-
-    <section id="ladder">
-      <h2>사다리타기</h2>
-      <div id="ladder-container"></div>
-      <button onclick="startLadder()">Start</button>
-    </section>
-
-    <section id="pinball">
-      <h2>핀볼</h2>
-      <div id="pinball-container"></div>
-      <button onclick="startPinball()">Start</button>
-    </section>
-
-    <section id="draw-board">
-      <h2>뽑기판</h2>
-      <div id="draw-board-container"></div>
-      <button onclick="draw()">Draw</button>
-    </section>
-
-    <section id="random-number">
-      <h2>랜덤 번호 생성기</h2>
-      <div id="random-number-container"></div>
-      <button onclick="generateRandomNumber()">Generate</button>
-    </section>
-
-    <section id="dice">
-      <h2>주사위 굴리기</h2>
-      <div id="dice-container"></div>
-      <button onclick="rollDice()">Roll</button>
-    </section>
-
-    <script src="js/app.js"></script>
-    <script src="js/wheel.js"></script>
-    <script src="js/ladder.js"></script>
-    <script src="js/pinball.js"></script>
-    <script src="js/draw-board.js"></script>
-    <script src="js/random-number.js"></script>
-    <script src="js/dice.js"></script>
+      <div class="grid-item" onclick="location.href='pages/ladder.html'">
+        <img src="images/ladder.png" alt="Ladder Game" />
+        <p>사다리타기</p>
+      </div>
+      <div class="grid-item" onclick="location.href='pages/pinball.html'">
+        <img src="images/pinball.png" alt="Pinball" />
+        <p>핀볼</p>
+      </div>
+      <div class="grid-item" onclick="location.href='pages/draw-board.html'">
+        <img src="images/draw-board.png" alt="Draw Board" />
+        <p>뽑기판</p>
+      </div>
+      <div class="grid-item" onclick="location.href='pages/random-number.html'">
+        <img src="images/random-number.png" alt="Random Number Generator" />
+        <p>랜덤 번호 생성기</p>
+      </div>
+      <div class="grid-item" onclick="location.href='pages/dice.html'">
+        <img src="images/dice.png" alt="Dice Roll" />
+        <p>주사위 굴리기</p>
+      </div>
+    </div>
   </body>
 </html>
